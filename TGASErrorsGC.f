@@ -32,13 +32,13 @@ c         a(4): Equatorial proper motions in right ascension in true arcs on the
 c         a(5): Equatorial proper motions: mud (units: mas/yr)
 c
 c     V_T: V tycho magnitude. (TGAS is not going to contain new magnitudes for the stars)
-c************************************************************************************************
-c     subset: INTEGER Variable to select the TGAS subset                                        *
-c-------------------------------------------------------------------------------                *
-c                                                                                               *     
-c            subset=1 : For Tycho Only subset of TGAS                                           *
-c            subset=2 : For HIPPARCOS subset of TGAS                                            * 
-c************************************************************************************************
+c*********************************************************************
+c     subset: INTEGER Variable to select the TGAS subset             *
+c--------------------------------------------------------------------*
+c                                                                    *     
+c            subset=1 : For Tycho Only subset of TGAS                *
+c            subset=2 : For HIPPARCOS subset of TGAS                 * 
+c*********************************************************************
 c
 c Output values: 
 c -------------
