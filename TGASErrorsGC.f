@@ -70,11 +70,6 @@ c         TGASOB(5): Observed Equatorial proper motions: mud (units: mas/yr)
 c      Dseed=214749.d0 # Previous line can be substituted by this one if desired.
 
 
-
-
-
-
-
 c       Computation of the observed astrometric quantities 
 
 c       The error in right ascension TGASER(1) denotes true arc on the sky
@@ -82,7 +77,6 @@ c       so the right ascension shall be converted to that before the
 c       random error is assigned 
 c       alpha_{*}=alpha*cos(delta) 
  
-
 
       a(1)=a(1)*dcos(a(2))
 
@@ -93,7 +87,7 @@ c  Conversion of (alpha*,delta) from radians to mas
       a(2)=a(2)/mas
 
 	
-c Here we assign the values for the standard deviation depending on magnitude.
+c Here we assign the values for the standard deviation depending on magnitude and on subset.
       if(subset.eq.1) then
       	if(V_T.lt.7) then
 		TGASER(1)=0.244
