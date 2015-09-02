@@ -148,7 +148,7 @@ c Here we assign the values for the standard deviation depending on magnitude.
 
 	enddo
 	
-         
+      
 
 
 c       The true and observed (alpha*,delta) are converted from mas to radiants 
