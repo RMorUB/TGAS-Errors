@@ -191,10 +191,6 @@ c Here we assign the values for the standard deviation depending on magnitude an
 
       	endif  
 
-
-
-
-
       endif
 
       do i=1,5
@@ -203,9 +199,6 @@ c Here we assign the values for the standard deviation depending on magnitude an
 
       enddo
 	
-
-
-
 c       The true and observed (alpha*,delta) are converted from mas to radiants 
       a(1)=a(1)*mas
       a(2)=a(2)*mas
@@ -217,12 +210,5 @@ c       and the alpha_{*} is converted to alpha
       TGASOB(1)=TGASOB(1)/dcos(a(2))
 c       we also convert back the input value
       a(1)=a(1)/dcos(a(2))
-
-
-
-
-
-
-
 
       end
