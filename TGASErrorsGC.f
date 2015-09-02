@@ -66,7 +66,7 @@ c         TGASOB(5): Observed Equatorial proper motions: mud (units: mas/yr)
       INCLUDE 'const_math.h'
       INCLUDE 'const_ast.h'
 
-      Dseed=time() ! number of seconds from 1970
+      Dseed=time() ! number of seconds from 1970 (If you prefere a fixed seed use the line below)
 c      Dseed=214749.d0 # Previous line can be substituted by this one if desired.
 
 
@@ -90,104 +90,104 @@ c  Conversion of (alpha*,delta) from radians to mas
 c Here we assign the values for the standard deviation depending on magnitude and on subset.
       if(subset.eq.1) then
       	if(V_T.lt.7) then
-		TGASER(1)=0.244
-		TGASER(2)=0.244
-		TGASER(3)= 0.399
-		TGASER(4)= 0.198
-		TGASER(5)= 0.198
+		TGASER(1)=0.244d0
+		TGASER(2)=0.244d0
+		TGASER(3)= 0.399d0
+		TGASER(4)= 0.198d0
+		TGASER(5)= 0.198d0
 
 		
       	elseif(V_t.ge.7.and.V_T.lt.8) then
-		TGASER(1)=0.198
-		TGASER(2)=0.198
-		TGASER(3)= 0.348
-		TGASER(4)= 0.264
-		TGASER(5)= 0.264
+		TGASER(1)=0.198d0
+		TGASER(2)=0.198d0
+		TGASER(3)= 0.348d0
+		TGASER(4)= 0.264d0
+		TGASER(5)= 0.264d0
 		 
 
       	elseif(V_t.ge.8.and.V_T.lt.9) then 
-		TGASER(1)=0.191
-		TGASER(2)=0.191
-		TGASER(3)= 0.327
-		TGASER(4)= 0.403
-		TGASER(5)= 0.403
+		TGASER(1)=0.191d0
+		TGASER(2)=0.191d0
+		TGASER(3)= 0.327d0
+		TGASER(4)= 0.403d0
+		TGASER(5)= 0.403d0
       	elseif(V_t.ge.9.and.V_T.lt.10) then
-		TGASER(1)=0.230
-		TGASER(2)=0.230
-		TGASER(3)= 0.407
-		TGASER(4)= 0.680
-		TGASER(5)= 0.680
+		TGASER(1)=0.230d0
+		TGASER(2)=0.230d0
+		TGASER(3)= 0.407d0
+		TGASER(4)= 0.680d0
+		TGASER(5)= 0.680d0
       	elseif(V_t.ge.10.and.V_T.lt.11) then 
-		TGASER(1)=0.329
-		TGASER(2)=0.329
-		TGASER(3)= 0.601
-		TGASER(4)= 1.145
-		TGASER(5)= 1.145
+		TGASER(1)=0.329d0
+		TGASER(2)=0.329d0
+		TGASER(3)= 0.601d0
+		TGASER(4)= 1.145d0
+		TGASER(5)= 1.145d0
 
       	elseif(V_t.ge.11.and.V_T.lt.12) then 
-		TGASER(1)=0.379
-		TGASER(2)=0.379
-		TGASER(3)= 0.722
-		TGASER(4)=1.522
-		TGASER(5)=1.522
+		TGASER(1)=0.379d0
+		TGASER(2)=0.379d0
+		TGASER(3)= 0.722d0
+		TGASER(4)=1.522d0
+		TGASER(5)=1.522d0
       	elseif(V_t.ge.12) then
-		TGASER(1)=0.349
-		TGASER(2)=0.349
-		TGASER(3)= 0.702
-		TGASER(4)= 1.615
-		TGASER(5)= 1.615
+		TGASER(1)=0.349d0
+		TGASER(2)=0.349d0
+		TGASER(3)= 0.702d0
+		TGASER(4)= 1.615d0
+		TGASER(5)= 1.615d0
 
       	endif  
 
       elseif(subset.eq.2) then
 
       	if(V_T.lt.7) then
-		TGASER(1)=0.116
-		TGASER(2)=0.116
-		TGASER(3)= 0.180
-		TGASER(4)= 0.017
-		TGASER(5)= 0.017
+		TGASER(1)=0.116d0
+		TGASER(2)=0.116d0
+		TGASER(3)= 0.180d0
+		TGASER(4)= 0.017d0
+		TGASER(5)= 0.017d0
 
 		
       	elseif(V_t.ge.7.and.V_T.lt.8) then
-		TGASER(1)=0.120
-		TGASER(2)=0.120
-		TGASER(3)= 0.192
-		TGASER(4)= 0.021
-		TGASER(5)= 0.021
+		TGASER(1)=0.120d0
+		TGASER(2)=0.120d0
+		TGASER(3)= 0.192d0
+		TGASER(4)= 0.021d0
+		TGASER(5)= 0.021d0
 		 
 
       	elseif(V_t.ge.8.and.V_T.lt.9) then 
-		TGASER(1)=0.125
-		TGASER(2)=0.125
-		TGASER(3)= 0.198
-		TGASER(4)= 0.029
-		TGASER(5)= 0.029
+		TGASER(1)=0.125d0
+		TGASER(2)=0.125d0
+		TGASER(3)= 0.198d0
+		TGASER(4)= 0.029d0
+		TGASER(5)= 0.029d0
       	elseif(V_t.ge.9.and.V_T.lt.10) then
-		TGASER(1)=0.133
-		TGASER(2)=0.133
-		TGASER(3)= 0.217
-		TGASER(4)= 0.039
-		TGASER(5)= 0.039
+		TGASER(1)=0.133d0
+		TGASER(2)=0.133d0
+		TGASER(3)= 0.217d0
+		TGASER(4)= 0.039d0
+		TGASER(5)= 0.039d0
       	elseif(V_t.ge.10.and.V_T.lt.11) then 
-		TGASER(1)=0.154
-		TGASER(2)=0.154
-		TGASER(3)= 0.253
-		TGASER(4)= 0.058
-		TGASER(5)= 0.058
+		TGASER(1)=0.154d0
+		TGASER(2)=0.154d0
+		TGASER(3)= 0.253d0
+		TGASER(4)= 0.058d0
+		TGASER(5)= 0.058d0
 
       	elseif(V_t.ge.11.and.V_T.lt.12) then 
-		TGASER(1)=0.128
-		TGASER(2)=0.128
-		TGASER(3)= 0.211
-		TGASER(4)= 0.087
-		TGASER(5)=0.087
+		TGASER(1)=0.128d0
+		TGASER(2)=0.128d0
+		TGASER(3)= 0.211d0
+		TGASER(4)= 0.087d0
+		TGASER(5)=0.087d0
       	elseif(V_t.ge.12) then
-		TGASER(1)=0.151
-		TGASER(2)=0.151
-		TGASER(3)= 0.248
-		TGASER(4)= 0.135
-		TGASER(5)= 0.135
+		TGASER(1)=0.151d0
+		TGASER(2)=0.151d0
+		TGASER(3)= 0.248d0
+		TGASER(4)= 0.135d0
+		TGASER(5)= 0.135d0
 
       	endif  
 
